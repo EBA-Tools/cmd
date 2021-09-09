@@ -13,5 +13,5 @@
 | EBA Blacklist       | :white_check_mark:     | :x:                    | :x:                    |
 
 [Note 1]: Commands do not support Run as Administrator.<br>
-[Note 2]: Plugins will be marked as unlicensed in EBA Command Center for Windows XP.
+[Note 2]: Plugins will be marked as unlicensed in EBA Command Center for Windows XP.<br>
 [Note 3]: EBA Malware Removal is unable to download the latest malware data from the internet in Windows 7. The malware database that comes with EBA Command Center will still work. However, EBA Command Center for Windows XP does not support EBA Malware Removal.
