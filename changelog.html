@@ -20,7 +20,7 @@
         <li>New Command (language) - This new command allows you to change the language. By default, there is only one language (English), but plugins can add new languages.</li>
         <li>Updating Users and Settings to the new XML format.</li>
         <li>EBA Command Centers code is being re-written (yet again) to allow for localization.</li>
-        <li>All Modifiable Startup Settings will have a command that allows the setting to be changed while EBA Command Center is running (ex: the command 'debug' will change the setting allowDebugMessages)</li>
+        <li>The command 'debug' will act as a debug menu. It allows you to change the Modifiable Startup Settings (showDebugMessages, errHandle, logDebugMessages, </li>
         <li>Improving Logs (A new Modifiable Startup Setting will allow logging of debug events. Logs will properly log more events. Log messages can also be modified.</li>
         <li>Portable Mode - Install EBA Command Center on a USB drive, and use it across multiple devices, without making any changes to your PC.</li>
         <li>Made a change where running the installer will not give a User Account Control prompt until you confirm the installation. It will only give a UAC prompt if the installation is not portable.</li>
@@ -28,6 +28,15 @@
         <li>Encrypted Passwords - Before, passwords were stored on the device in a way where anyone can see it! Now, we're encrypting passwords, which makes it much more secure.</li>
         <li>Progress Bar - During sections of EBA Command Center that could take a while to complete, there will be a progress bar. This is because loading times during installation, updates, setting languages, and loading plugins.</li>
         <li>System Restore Points - EBA Command Center will automatically create a system restore point when you install, update, repair/refresh, or uninstall EBA Command Center. This can be disabled in Registry Editor.</li>
+        <li>Import from a shortcut - When creating a command, you'll have to option in import from a Windows Shortcut file.</li>
+        <li>Command Parameters Not Required - When you run a command that uses a parameter, it'll still work without a parameter. This allowed us to make the following changes:</li>
+        <ul>
+          <li>Run - You can use "run {1}", or just "run" to open the run box that was used before EBA Command Center 9.1.</li>
+          <li>Config - You can use "config {1} {2} {3}", "config {1} {2}", "config {1}", or "config". Parameters can be used to go directly to a specific section of the config menu (ex: "config save true" enables saveLogin), but you can also use the menus that we've always used.</li>
+          <li>Shutdown - You can use "shutdown" to trigger the default shutdown method, or use "shutdown {1}" where the parameter is "s" for shutdown, "r" for restart, or "h" for hibernate.</li>
+          <li>Help - You can travel to s specific help page using "help {1}", or visit the help homepage using "help".</li>
+        </ul>
+        <li>You will be required to log in to a level 2 user to import a file outside of initial setup.</li>
       </ul>
     </div>
     
